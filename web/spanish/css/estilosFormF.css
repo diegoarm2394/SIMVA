@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*label,input{
+	display:inline-block;	
+	}*/
+*{
+	box-sizing:border-box;
+	}
+.listas {
+	width: 139px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	text-align:right;
+	height: 25px;
+}
+
+#area {
+	height: 600px !important;
+}
+.fechas {
+	width: 139px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	text-align:right;
+	height: 30px;
+}
+
+.formularioRegistroFuncionario {
+	width: 100%;
+	min-height: 460px;
+	margin-top: -19px;
+	text-align: center;
+	}
+	
+.cajas{
+	width:398px;
+	float:left;
+	min-height: 400px;	
+	margin-top:20px;
+	
+	
+	}
+	
+label{
+	width: 140px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	text-align:right;
+		
+	
+}
+
+input{
+	/* [disabled]margin-bottom: 15px; */
+	font-weight: bold;
+	width: 139px;
+	text-align:left;
+	margin-bottom: 30px;
+	
+}
+label.error{
+	color: red;
+	position: absolute;
+	}
+
+/* label[for="campoGrado"]{
+	width: 50px;
+	text-align:left;
+	
+	}
+
+#campoGrado{
+	width:50px;
+	
+} 
+
+#direccion{
+	width: 300px;
+	} */

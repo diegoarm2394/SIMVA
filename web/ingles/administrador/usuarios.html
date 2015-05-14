@@ -1,0 +1,203 @@
+<html><!-- InstanceBegin template="/Templates/Template.dwt" codeOutsideHTMLIsLocked="false" -->
+    <head>
+    	<meta charset="utf-8">
+    	<!-- InstanceBeginEditable name="doctitle" -->
+    	<title>User Management</title>
+    	<!-- InstanceEndEditable -->
+    	<link type="text/css" rel="stylesheet" href="../css/estilos.css">
+    	<link type="text/css" rel="stylesheet" href="../css/font-awesome.css">
+    	<link type="text/css" rel="stylesheet" href="../css/bootstrap.css">
+    	<link rel="shortcut icon" href="../img/logos/logo.ico" type="image/x-icon">
+    	<script type="text/javascript" src="../js/jquery.js"></script>
+    	<script type="text/javascript" src="../js/jquery.validate.js"></script>
+    	<script type="text/javascript" src="../js/additional-methods.js"></script>
+    	<!-- InstanceBeginEditable name="head" -->
+    	<link type="text/css" rel="stylesheet" href="../css/admin.css">
+    	    	<!-- InstanceEndEditable -->
+    </head>
+    <header>
+    	<div id="logo" title="Logo SIMVA">
+        	<img src="../img/logos/logo.png" alt="logo" width="110" height="110" />
+    	</div>	
+        <div id="texto">
+        	<p id="h1"> SIMVA <br />  </p>
+        	<p id="h2"> Information System Control and Maintenance of Motor Vehicles </p>
+    	</div>
+    	<div id="logo2" title="Logo Ejercito Nacional">
+    		<img src="../img/logos/logo2.png" alt="logodos" width="110" height="110" />
+    	</div>
+        <!-- InstanceBeginEditable name="user" -->
+        <div id="user" title="Esta conectado como Administrador"> Admin
+        <!-- InstanceEndEditable -->
+            <span class="fa fa-user fa-3x"> </span>
+            <span class="trianguloar"></span>
+        </div>
+    </header>
+
+    <div id="espacio1"></div>
+<!-- InstanceBeginEditable name="nav" -->
+    	
+    <nav>
+        <a href="../administrador.html" title="Menu principal"><span class="fa fa-home fa-1x"></span>Home</a>
+        <a href="usuarios.html" title="User Management"><span class="fa fa-users fa-1x"> User Management</a>
+        <a href="menu2.html" title="Administrative Tools"><span class="fa fa-gears fa-1x"> Administrative Tools</a>
+        <a href="asignacionPriv.html" title="Assigning privileges"><span class="fa fa-user fa-1x"> Assigning privileges</a>
+        <a href="../index-en.html" title="Sign out"><span class="fa fa-sign-in fa-1x"></span>Sign out</a>
+    </nav>
+<!-- InstanceEndEditable -->
+
+    <div id="espacio2"></div>
+<!-- InstanceBeginEditable name="Body" -->
+    <body>
+        <section>
+    		       <div id="area"> 
+
+    		        <div id="miga">
+                    <br>
+                    <ol class="breadcrumb">
+                    <li><a href="../administrador.html">Home</a></li>
+                    <li class="active">User Management</li>   
+                    </ol>
+                    </div>  
+
+<form id="formulario">
+
+<br>
+
+			<h4>Enter the document to query:</h4>
+            
+            <br>
+            <label for="cedula">Document</label>
+			<input type="text" name="cedula" id="cedula" placeholder="0000000000" required tabindex="3">
+
+			<button class="btn btn-primary" id="botbusc" type="submit">Search</button>
+			<br>
+
+			
+			<label for="nombre">Name:</label>
+			<input type="text" name="nombre" id="nombre" placeholder="Edwin" required tabindex="1">
+			<br>
+			<label for="apellido">Last Name:</label>
+			<input type="text" name="apellido" id="apellido" placeholder="Carlosama" required tabindex="2">
+			<br>
+			
+			<label for="Grado">Rank:</label>
+			<input type="text" name="Grado" id="Grado" placeholder="Sargento Mayor" required tabindex="3">
+			<br>
+			<label for="TelefonoMovil">Cell Phone:</label>
+			<input type="tex" name="TelefonoMovil" id="TelefonoMovil" placeholder="0000000000" required tabindex="4">
+			<br>
+           
+
+          
+                       
+			<label for="procedencia">Department:</label>
+			<input list="Departamento" name="procedencia" id="procedencia" placeholder="Seleccione Departamento" tabindex="6">
+			<datalist id="Departamento">
+			  <option label="BOGOTA">BOGOTA</option>
+			  <option label="PASTO">PASTO</option>
+			  <option label="VALLE">VALLE</option>
+			  <option label="PUTUMAYO">PUTUMAYO</option>
+			  <option label="CHOCO">CHOCO</option>
+			  <option label="MEDELLIN">MEDELLIN</option>
+			  <option label="AMAZONAS">AMAZONAS</option>
+			  <option label="ANTIOQUIA">ANTIOQUIA</option>
+			  <option label="BOLIVAR">BOLIVAR</option>
+			  <option label="CAUCA">CAUCA</option>
+			  <option label="HUILA">HUILA</option>
+			  <option label="TOLIMA">TOLIMA</option>
+			  <option label="GUAJIRA">GUAJIRA</option>
+			  <option label="CESAR">CESAR</option>
+			  <option label="META">META</option>
+			  <option label="VAUPEZ">VAUPEZ</option>
+			  <option label="QUINDIO">QUINDIO</option>
+		    </datalist>
+            <br>
+            
+             <label for="foto">Attached Your Photo:</label>
+            <input type="file" name="Foto" id="fotoe" placeholder="foto" tabindex="5" >
+            
+          
+            <p style="text-align: center;">
+			<button class="btn btn-primary" id="botenv" type="submit">Send</button>
+			</div>
+			           </form> 
+    
+   
+     
+            </div>
+    </section>
+    
+    
+    
+			<script>
+$().ready(function(){
+	$("#formulario").validate({
+		rules:{
+			nombre:{
+				required:true,
+				minlength:3,
+				maxlength:15},
+			cedula:{
+				required:true,
+				minlength:8,
+				maxlength:12},
+				
+			apellido:{
+				required:true,
+				minlength:3,
+				maxlength:15},
+				
+			Grado:{
+				required:true,
+				minlength:3,
+				maxlength:15},
+			TelefonoMovil:{
+				required:true,
+				minlength:10,
+				maxlength:10},
+			
+		
+				
+		},messages:{
+			nombre:{required:"Campo requerido",
+					minlength:"Minimo 3 Caracteres",
+					maxlength:"Maximo 15 Caracteres"},
+					
+			cedula:{required:"Campo Requerido",
+			        minlength:"Minimo 8 Caracteres",
+					maxlength:"Maximo 12 Caracteres"
+			},
+			apellido:{required:"Campo requerido",
+					minlength:"Minimo 3 Caracteres",
+					maxlength:"Maximo 15 Caracteres"},
+					
+					
+			Grado: { required:"Campo requerido",
+					minlength:"Minimo 3 Caracteres",
+					maxlength:"Maximo 15 Caracteres"},
+					
+		    TelefonoMovil:{required:"Campo requerido",
+					minlength:"Minimo 3 Caracteres",
+					maxlength:"Maximo 15 Caracteres"},
+	
+		}
+						
+			});
+			});
+			
+			</script>
+
+ 
+  
+</body>	<!-- InstanceEndEditable -->
+
+	<div id="espacio3"></div>
+
+    <foot>
+	   <div class="pie">Versión 5.0 | COPYRIGHT   &copy;2014 SIMVA | Contact us: 3108549716 | E-mail: contactenos@simva.url.ph</div> 
+    </foot>
+
+	<div id="espacio4"></div>
+
+<!-- InstanceEnd --></html>

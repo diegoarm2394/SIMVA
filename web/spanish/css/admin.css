@@ -1,0 +1,139 @@
+section{
+	margin:auto;
+	
+	height:500px;
+
+
+	
+}
+
+label{
+	
+	margin:auto;
+	width: 200px;
+	display: inline-block; 
+	margin: 12px 0 12px 0; 
+}
+
+
+select.error{
+    
+        box-shadow: 0 0 5px #d45252;
+	 border-color: #b03535;
+            
+}
+select.valid{
+
+	
+        box-shadow: 0 0 5px #5cd053;
+        border-color: #28921f;
+        
+	
+	
+}
+
+label.error {
+	
+	color: #900;
+	font-style: italic;
+	font-size: 1em;
+	text-align: left;
+	padding: 3px;
+	margin: 5px;
+        
+       
+        
+}
+
+
+input.error{
+	background: #fff url(../img/invalid.png) no-repeat 98% center;
+        box-shadow: 0 0 5px #d45252;
+	 border-color: #b03535;
+             
+}
+
+input.valid{
+
+	background: #fff url(../img/valid.png) no-repeat 98% center;
+        box-shadow: 0 0 5px #5cd053;
+        border-color: #28921f;
+        
+	
+	
+}
+
+#area h3 {
+	text-align: center;
+}
+
+#area{
+	
+	text-align: left;
+	padding-left: 50px;
+	height: 100%;
+	
+}
+
+#botbusc {
+
+	margin-left: -1px !important;
+	height: 28px !important;
+	padding: 3px !important;
+}
+
+#botenv {
+
+	margin-left: 300px !important;
+	margin-top: -40px !important;
+}
+#botenv2 {
+
+	margin-left: 1080px !important;
+	margin-top: -100px !important;
+}
+
+#fotoe {
+	margin-left: 207px;
+	margin-top: -30px;
+
+}
+
+#formatoa{
+		
+		margin-left: px;
+
+}
+
+#fechaa{
+	margin-left: -150px;
+}
+
+#botsal2{
+	margin-top: 200px;
+	margin-left: 800px;
+}
+
+#perfill {
+
+	margin-left: 100px;
+}
+#perfil{
+	margin-left: -150px;
+}
+#botsal5{
+		margin-top: 70px;
+	margin-left: 700px;
+}
+.inputad{
+    padding: 5px;
+    height: 30px ; 
+    width: 200px ;
+}
+
+#contrasenia, #contraseniaC{
+    
+    height: 23px;
+    width: 190px;
+    
+}

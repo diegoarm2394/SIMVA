@@ -1,0 +1,65 @@
+<html>
+    <head>
+    	<meta charset="utf-8">
+    	<!-- TemplateBeginEditable name="doctitle" -->
+    	<title>SIMVA</title>
+    	<!-- TemplateEndEditable -->
+        <!-- TemplateBeginEditable name="head" -->
+    	<link type="text/css" rel="stylesheet" href="../css/estilos.css">
+    	<link type="text/css" rel="stylesheet" href="../css/font-awesome.css">
+    	<link type="text/css" rel="stylesheet" href="../css/bootstrap.css">
+    	<link rel="shortcut icon" href="../img/logos/logo.ico" type="image/x-icon">
+    	<script type="text/javascript" src="../js/jquery.js"></script>
+    	<script type="text/javascript" src="../js/jquery.validate.js"></script>
+    	<script type="text/javascript" src="../js/additional-methods.js"></script>
+    	<!-- TemplateEndEditable -->
+    </head>
+    <header>
+    	<div id="logo">
+        	<img src="../img/logos/logo.png" alt="logo" width="110" height="110" />
+    	</div>	
+        <div id="texto">
+        	<p id="h1"> SIMVA <br />  </p>
+        	<p id="h2"> Sistema de Informacion de Control y Mantenimiento de Vehiculos Automotores </p>
+    	</div>
+    	<div id="logo2">
+    		<img src="../img/logos/logo2.png" alt="logodos" width="110" height="110" />
+    	</div>
+        <!-- TemplateBeginEditable name="user" -->
+        <div id="user"> Asig
+        <!-- TemplateEndEditable -->
+            <span class="fa fa-user fa-3x"> </span>
+            <span class="trianguloar"></span>
+        </div>
+    </header>
+
+    <div id="espacio1"></div>
+<!-- TemplateBeginEditable name="nav" -->
+    <nav>	
+        <a href="../index.html"><span class="fa fa-home fa-1x"></span>Login</a>
+        <a href="../formFuncionario.html">Funcionario</a>
+        <a href="../formVehiculo.html">Vehiculos</a>
+        <a href="">Asginacion</a>
+    </nav>
+<!-- TemplateEndEditable -->
+
+    <div id="espacio2"></div>
+<!-- TemplateBeginEditable name="Body" -->
+    <body>
+        <section>
+    		<div id="area">
+     
+            </div>
+    </section> 
+  
+</body><!-- TemplateEndEditable -->
+
+	<div id="espacio3"></div>
+
+    <foot>
+	   <div class="pie">Versión 1.0 | COPYRIGHT   &copy;2014 SIMVA | Contáctenos: 3108549716 | E-mail: contactenos@simva.url.ph</div> 
+    </foot>
+
+	<div id="espacio4"></div>
+
+</html>

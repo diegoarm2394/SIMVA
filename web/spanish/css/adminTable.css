@@ -1,0 +1,123 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-mar-2015, 17:08:18
+    Author     : Diego
+*/
+
+section{
+	margin:auto;
+	width: 89% !important;
+	
+}
+
+label{
+	
+	margin:auto;
+	width: 200px;
+	
+	display: inline-block; 
+	margin: 12px 0 12px 0; 
+}
+
+
+
+
+label.error {
+	
+	color: #900;
+	font-style: italic;
+	font-size: 1em;
+	text-align: left;
+	padding: 3px;
+	margin: 5px;
+}
+
+input.error{
+	
+	border-color: #933;
+}
+
+input.valid{
+
+	border-color: #393;
+	
+	
+}
+
+#area h4 {
+	text-align: center;
+}
+
+#area{
+	
+	text-align: left;
+	padding-left: 50px;
+	height: auto;
+        
+	
+}
+
+#botbusc {
+
+	margin-left: -1px !important;
+	height: 28px !important;
+	padding: 3px !important;
+}
+
+#botenv {
+
+	margin-left: 800px !important;
+	margin-top: -0px !important;
+}
+
+#fotoe {
+	margin-left: 207px;
+	margin-top: -30px;
+
+}
+
+#formatoa{
+		
+        margin-left: px;
+
+}
+
+#fechaa{
+	margin-left: -150px;
+}
+
+#botsal2{
+	margin-top: 200px;
+	margin-left: 800px;
+}
+
+#perfill {
+
+	margin-left: 100px;
+}
+#perfil{
+	margin-left: -150px;
+}
+#botsal5{
+		margin-top: 70px;
+	margin-left: 700px;
+}
+
+#example {
+    height: 90% !important;
+    
+    background: none !important;
+    
+}
+#table1{
+    width: 1100px !important;
+    height: 530px !important;
+}
+
+h5{
+    color: #222222 !important;
+}

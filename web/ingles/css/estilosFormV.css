@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*label,input{
+	display:inline-block;	
+	}*/
+*{
+	box-sizing:border-box;
+	}
+	
+#foto5{
+	margin-left: 100px;
+	margin-bottom: 20px;
+}
+
+.listas {
+	width: 139px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	text-align:right;
+	height: 25px;
+}
+
+.fechas {
+	width: 139px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 20px;
+	text-align:right;
+	height: 30px;
+}
+
+	
+.formularioRegistroVehiculo {
+	margin-top: -19px;
+	margin-left: -50px;
+	}
+	
+.cajas{
+	width:399px;
+	float:left;
+	min-height: 400px;	
+	text-align:left;
+	margin-top: 19px;
+	
+	}
+	
+label{
+	width: 165px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	text-align:right;
+}
+
+label.error{
+	color: red;
+	position:absolute;
+	
+	}
+
+input{
+	/* [disabled]margin-bottom: 15px; */
+	font-weight: bold;
+	width: 139px;
+	text-align:left;
+	margin-bottom: 30px;
+	
+}
+
+#area {
+	height: 650px;
+
+}
+/* label[for="campoGrado"]{
+	width: 50px;
+	text-align:left;
+	
+	}
+
+#campoGrado{
+	width:50px;
+	
+} 
+
+#direccion{
+	width: 300px;
+	} */

@@ -1,0 +1,206 @@
+
+*{
+	box-sizing: border-box;
+}
+
+h3{ text-align:center;
+
+
+
+}
+
+#foto{
+	width: 130px;
+	height:130px;
+	margin-top:5px;
+	margin-right:20px;
+	border: 1px solid black;
+		
+	}
+
+#fotoCarro{
+	margin-top:140px;
+	margin-left:30px;
+	
+}
+
+
+form{
+	width:100%;
+	height:460px;
+	min-height:460px;
+	text-align:center;
+	
+}
+
+#editarMantenimiento{
+	width: 1200px;
+	height:200px;
+	margin-top:200px;
+	
+}
+
+
+#bloqueUno{
+	width:100%;
+	height:50px;
+	/*border:2px solid blue;*/
+	text-align:center;
+	
+	/*border: solid 2px #000;*/
+}
+	
+.lupas{
+	float:left;
+	text-align:center;
+	/*border:2px solid black;*/
+	margin-left:80px;
+}
+#bloqueDos{
+	width:400px;
+	height:200px;
+	/*border:2px solid red;*/
+	margin-left:80px;
+	float:left;
+	
+		
+	/*border: solid 2px #000;*/
+	}
+
+#bloqueTres{
+	width:400px;
+	height:200px;
+	float:right;
+	/*border:2px solid red;*/
+	margin-right:220px;
+	/*border: solid 2px #000;*/
+	}
+
+#botones{
+	width:100px;
+	height:40px;
+	margin-top:10px;
+	margin-right:300px;
+	float:right;
+	
+}
+
+input{
+	width:200px;
+	text-align:left;
+	display:inline-block;
+}
+
+label{
+	width:105px; 
+	margin-right:20px;
+	display:inline-block;
+	text-align: right;
+	margin-top:20px;
+	margin-left:5x;
+}
+
+.lupa{
+	width:30px;
+	height:25px;
+	margin-right:30px;
+}
+
+
+label[for="campoPlaca"]{
+	width: 180px;
+	margin-left:-40px;
+}
+
+input[name="Placa"]{
+	margin-right:35px;
+}
+
+
+label[for="campoCedula"]{
+	width: 180px;
+	margin-left:-50px;
+}
+
+
+
+label[for="campoMantenimiento"]{
+	margin-right:35px;
+}
+
+input[name="Mantenimiento"]{
+	margin-right:20px;
+}
+
+
+
+
+
+
+
+label[for="campoEstado"]{
+	width:150px;
+	margin-left: -105px;
+	margin-right:20px;	
+}
+
+
+
+select[name="estado"]{
+	width:200px;
+	margin-right:-55px;
+}
+
+label[for="campoGrado"]{
+	margin-left: -50px;
+	margin-right:20px;	
+}
+
+
+select[name="Grado"]{
+	width:200px;
+	height:30px;
+	margin-right:-55px;
+}		
+
+
+.fecha{
+	height:30px;
+}
+.seleccion{
+	height:30px;
+}
+label:after{
+	content: "*";
+	color: red;
+	padding: 5px;
+}
+	
+input.valid{
+	background-color: #EFE;
+	border-color: #393;
+
+}
+
+label.error {
+	color: #900;
+	font-size: 0.9em;
+	text-align: left;
+	padding: -10px 5px -20px -20px;
+	margin: -3px;
+	position:absolute;
+	margin-left:-200px;
+	
+}
+
+input.error{
+	
+	background-color: #FEE;
+	border-color: #933;
+}
+	
+
+#area {
+
+	height: 700px;
+}

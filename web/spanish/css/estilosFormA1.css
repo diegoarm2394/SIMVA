@@ -1,0 +1,59 @@
+section{
+	
+	margin:auto;
+	width:89%;
+	height:459px;
+	background:-webkit-Radial-gradient(center, #797979, #757575, #767676);
+	
+	
+}
+
+label{
+	width: 200px;
+	text-align: right;
+	display: inline-block; 
+	margin: 15px 0 15px 0; 
+}
+
+label::after{
+	content: "*";
+	color: red;
+	padding: 5px;
+}
+
+label.error {
+	color: #900;
+	font-style: italic;
+	font-size: 1em;
+	text-align: left;
+	padding: 3px;
+	margin: 5px;
+}
+
+input.error{
+	
+	border-color: #933;
+}
+
+input.valid{
+
+	border-color: #393;
+	
+	
+}
+#cudro1{
+	float:left;	
+	width:20%;
+	height:459px;
+		background:-webkit-Radial-gradient(center, #797979, #757575, #767676);
+	
+}
+
+#cudro2{
+	float:right;
+	width:70%;
+	height:459px;
+		background:-webkit-Radial-gradient(center, #797979, #757575, #767676);
+	
+}
+	

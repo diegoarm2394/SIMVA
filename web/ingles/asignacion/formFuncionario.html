@@ -1,0 +1,365 @@
+<html><!-- InstanceBegin template="/Templates/Template.dwt" codeOutsideHTMLIsLocked="false" -->
+    <head>
+    	<meta charset="utf-8">
+    	<!-- InstanceBeginEditable name="doctitle" -->
+    	<title>Official Registration Form</title>
+    	<!-- InstanceEndEditable -->
+        <!-- InstanceBeginEditable name="head" -->
+        <link type="text/css" rel="stylesheet" href="../css/estilos.css">
+    	<link type="text/css" rel="stylesheet" href="../css/font-awesome.css">
+    	<link type="text/css" rel="stylesheet" href="../css/bootstrap.css">
+    	<link rel="shortcut icon" href="../img/logos/logo.ico" type="image/x-icon">
+    	<script type="text/javascript" src="../js/jquery.js"></script>
+    	<script type="text/javascript" src="../js/jquery.validate.js"></script>
+    	<script type="text/javascript" src="../js/additional-methods.js"></script>
+        <link type="text/css" rel="stylesheet" href="../css/estilosFormF.css">
+    	<!-- InstanceEndEditable -->
+    </head>
+    <header>
+    	<div id="logo">
+        	<img src="../img/logos/logo.png" alt="logo" width="110" height="110" />
+    	</div>	
+        <div id="texto">
+        	<p id="h1"> SIMVA <br />  </p>
+        	<p id="h2"> Information System Control and Maintenance of Motor Vehicles </p>
+    	</div>
+    	<div id="logo2">
+    		<img src="../img/logos/logo2.png" alt="logodos" width="110" height="110" />
+    	</div>
+        <!-- InstanceBeginEditable name="user" -->
+        <div id="user"> Asig
+        <!-- InstanceEndEditable -->
+            <span class="fa fa-user fa-3x"> </span>
+            <span class="trianguloar"></span>
+        </div>
+    </header>
+
+    <div id="espacio1"></div>
+<!-- InstanceBeginEditable name="nav" -->
+    	
+    <nav>
+        <a href="../asignacion.html" title="Main Menu"><span class="fa fa-home fa-1x"></span>Home</a>
+        <a href="formFuncionario.html" title="Officials Registration Form"><span class="fa fa-users fa-1x"> Registration Officials</a>
+        <a href="formVehiculo.html" title="Vehicle Registration Form"><span class="fa fa-car fa-1x"> Registration Vehicle</a>
+        <a href="formAsignacion.html" title="Making assignment"><span class="fa fa-check-square-o fa-1x"> Making assignment</a>
+        <a href="../index-en.html" title="Sign Out"><span class="fa fa-sign-out fa-1x"></span>Sign Out</a>
+    </nav>
+<!-- InstanceEndEditable -->
+
+    <div id="espacio2"></div>
+<!-- InstanceBeginEditable name="Body" -->
+    <body>
+        <section>
+    		<div id="area">
+
+                    <div id="miga">
+                    <br>
+                    <ol class="breadcrumb">
+                    <li><a href="../Asignacion.html">Home</a></li>
+                    <li class="active">Official Registration Form</li>   
+                    </ol>
+                    </div>
+
+     			<form class="formularioRegistroFuncionario" method="post" action="http://ejercito.mil.co">
+    		<h3>Official Registration Form</h3>
+        
+           <div class="cajas" id="cajaUno">       
+        
+        		<label for="grado">Rank:</label>
+        		<input class="listas" list="grados" name="grado" id="grado" tabindex="1" required>
+        		<datalist  id="grados">
+                	<option disabled>Select a military rank</option>
+                    <option label="GR.">General of the Army</option>
+                    <option label="TG.">Lieutenant General</option>
+                    <option label="MG.">Major General</option>
+           			<option label="BG.">Brigadier General</option>
+        			<option label="CR.">Coronel</option>
+					<option label="TC.">Lieutenant Coronel</option>
+					<option label="MY.">Major</option>
+					<option label="CT.">Captain</option>
+                    <option label="TE.">Lieutenant</option>
+                    <option label="ST.">Second Lieutenant</option>
+                    <option label="SMCC.">Join Command Sargeant Major</option>
+					<option label="SMC.">Comamnd Sargeant Major</option>
+					<option label="SM.">Sargeant Major</option>
+	            	<option label="SP.">First Sargeant</option>
+					<option label="SV.">Sargeant First Class</option>
+    	        	<option label="SS.">Second Sargeant</option>
+                    <option label="CP.">First Corporal</option>
+	           		<option label="CS.">Second Corporal</option>
+	            	<option label="C3.">Third Corporal</option>
+	           		<option label="SLB.">Private First Class</option>
+    	        	<option label="SLP.">Private Professional</option>
+        	    	<option label="SLR.">Private Basic</option>
+            		            		            	         		</datalist> 
+         
+	        	<label for="campoApellido1">First Surname:</label>
+    	    	<input name="apellido1" id="campoApellido1" type="text" placeholder="Ej. Medina" tabindex="2" required minlength="3" maxlength="10">
+        
+        		<label for="campoApellido2">Second Surname:</label>
+        		<input name="apellido2" id="campoApellido2" type="text" placeholder="Ej. Tarazona" tabindex="3" maxlength="10">
+           
+       			<label for="campoNombre1">First Name:</label>
+	        	<input name="nombre1" id="campoNombre1" type="text" placeholder="Ej. Jairo" tabindex="4" required maxlength="10">
+    	    
+       		 	<label for="campoNombre2">Middle Name:</label>
+        		<input name="nombre2" id="campoNombre2" type="text" placeholder="Ej. Ismael" tabindex="5" maxlength="10">
+        
+            	<label for="numeroDocumento">Identification Documents:</label>
+       			<input name="numeroDocumento" id="numeroDocumento" type="text" placeholder= "Ej. 79'399.894" tabindex="6" required maxlength="10">
+        
+        		<label for="ciudadDocumento">From:</label>
+        		<select class="listas" id="ciudadDocumento" tabindex="7" required>
+                	<option disabled>Select a city</option>
+        			<option>Bogota</option>
+	            	<option>Bucaramanga</option>
+    	    		<option>Cali</option>
+        	    	<option>Medellin</option>
+            		<option>Tunja</option>
+            		<option>Villavicencio</option>
+            		<option>Zipaquira</option>
+        		</select> 
+        
+        </div>
+                
+        <div class="cajas" id="cajados">
+        
+       			<label for="campoFechaNacimiento">Date of Birth</label>
+        		<input name="campoFechaNacimiento" class="fechas" id="campoFechaNacimiento" type="date" tabindex="8" maxlength="10">
+        
+        		<label for="campoRh">Rh Factor</label>
+        		<input name="rh" id="campoRh" type="text" placeholder="Ej. O+" tabindex="9" maxlength="10">
+                       
+        		<label for="direccionResidencia">Address</label>
+  			    <input name="direccionResidencia" id="direccionResidencia" type="text" placeholder="Eg. Street 200 # 23-50" tabindex="10" maxlength="40">
+        
+   			    <label for="ciudadResidencia">City:</label>
+        		<select class="listas" id="ciudadResidencia" tabindex="11" required maxlength="11">
+                	<option disabled>Select a city</option>
+ 			       	<option>Bogota</option>
+            		<option>Bucaramanga</option>
+        			<option>Cali</option>
+           			<option>Medellin</option>
+           			<option>Tunja</option>
+          			<option>Villavicencio</option>
+          			<option>Zipaquira</option>
+        		</select> 
+        
+        		<label for="telefono">Telephone number:</label>
+        		<input name="telefono" id="telefono" type="text" placeholder= "Ej. 7581429" tabindex="12" required minlength="7"maxlength="10">
+        
+        		<label for="movil">Cell number:</label>
+        		<input name="movil" id="movil" type="text" placeholder= "Ej. 3002128188" tabindex="13" required minlength="7" maxlength="10">
+                
+        		<label for="indicativo">Military code:</label>
+        		<input name="indicativo" id="indicativo" type="text" placeholder= "Ej. Alfa-8" tabindex="14" required maxlength="10">
+        
+        </div>
+        <div class="cajas" id="cajaTres">
+        
+        		<label for="licenciaConduccion">Driving License:</label>
+        		<input name="licenciaConduccion" id="licenciaConduccion" type="text" placeholder= "Ej. 1100100096612385" tabindex="15" required minlength="8" maxlength="17">
+        
+        		<label for="categoria">Category</label>
+        		<select class="listas" id="categoria" tabindex="16" required maxlength="11">
+                	<option disabled>Select</option>
+ 			       	<option>A1</option>
+            		<option>A2</option>
+        			<option>B1</option>
+           			<option>B2</option>
+           			<option>B3</option>
+          			<option>C1</option>
+          			<option>C2</option>
+                    <option>C3</option>
+        		</select>
+                <br> 
+        
+        		<label for="vencimientoCategoria">Expiration Date</label>
+        		<input name="vencimientoCategoria" class="fechas" id="vencimientoCategoria" type="date" tabindex="17" required maxlength="10">
+        
+        		<label for="email">Email:</label>
+        		<input name="email" id="email" type="email" placeholder="Ej. jairoismael@hotmail.com" tabindex="18" required maxlength="25">
+        
+        		<label for="fechaAlta">Entry date</label>
+       			<input name="fechaAlta" class="fechas" id="fechaAlta" type="date" tabindex="19" required maxlength="10">
+        <br>
+        <div id="foto6"> 
+        	<img src="../img/funcionario.jpg" alt="foto" width="120px" height="120px">
+        </div>
+        <button class="btn btn-primary" type="submit">Search Photo</button>
+        
+        <button class="btn btn-primary" type="submit">Send</button>
+		</div>
+
+        </form>
+   
+	</section>
+	</section>
+	<script>
+	$().ready(function(){
+		$(".formularioRegistroFuncionario").validate({
+			rules:{
+				grado:{
+					required: true
+					},
+				apellido1:{
+					lettersonly: true,
+					required: true,
+					minlength: 3,
+					maxlength: 10
+					},
+				apellido2:{
+					lettersonly: true,
+					minlength: 3,
+					maxlength: 10
+					},
+				nombre1:{
+					lettersonly: true,
+					required: true,
+					minlength: 3,
+					maxlength:10
+					},
+				nombre2:{
+					lettersonly: true,
+					minlength: 3,
+					maxlength:10
+					},
+				numeroDocumento:{
+					required: true,
+					digits: true,
+					minlength: 5,
+					maxlength: 10
+					},
+				ciudadDocumento:{
+					required: true
+					},
+				campoFechaNacimiento:{
+					required: true
+					},
+				telefono:{
+					digits: true,
+					required: true,
+					minlength: 7,
+					maxlength:8
+					},
+				movil:{
+					digits: true,
+					required: true,
+					minlength: 7,
+					maxlength: 10
+					},
+				indicativo:{
+					required: true
+					},
+				licenciaConduccion:{
+					digits: true,
+					required: true,
+					minlength: 8,
+					maxlength: 17
+					},
+				categoria:{
+					required: true
+					},
+				vencimientoCategoria:{
+					required: true
+					},
+				email:{
+					required: true,
+					email: true
+					},
+				fechaAlta:{
+					required: true
+					},
+
+					
+			},
+		
+			/*messages: {
+				grado:  {
+					required: "Campo requerido",
+				},
+				apellido1:  {
+					required: "Campo requerido",
+					lettersonly: "Por favor Digite solo letras",
+					minlength: "Mínimo {0} caracteres"
+				},
+				apellido2:  {
+					required: "Campo requerido",
+					lettersonly: "Por favor Digite solo letras",
+					minlength: "Mínimo {0} caracteres"
+				},
+				nombre1: {
+					required: "Campo requerido",
+					lettersonly: "Por favor Digite solo letras",
+					minlength: "Mínimo {0} caracteres"
+				},
+				nombre2: {
+					required: "Campo requerido",
+					lettersonly: "Por favor Digite solo letras",
+					minlength: "Mínimo {0} caracteres"
+				},
+				numeroDocumento: {
+					required: "Campo requerido",
+					digits: "Por favor digite solo numeros",
+					minlength: "Mínimo {0} caracteres"
+				},
+				ciudadDocumento:  {
+					required: "Campo requerido"
+					},
+				campoFechaNacimiento:{
+					required: "Campo requerido"
+				},
+				telefono:{
+					required: "Campo requerido",
+					digits: "Por favor digite solo numeros",
+					minlength: "Mínimo {0} caracteres",
+					maxlength: "Maximo {0} caracteres"
+				},
+				movil:{
+					required: "Campo requerido",
+					digits: "Por favor digite solo numeros",
+					minlength: "Mínimo {0} caracteres",
+					maxlength: "Maximo {0} caracteres"
+				},
+				indicativo:{
+					required: "Campo requerido"
+				},
+				licenciaConduccion:{
+					required: "Campo requerido",
+					digits: "Por favor digite solo numeros",
+					minlength: "Minimo {0} caracteres",
+					maxlength: "Maximo {0} caracteres"
+				},
+				categoria:{
+					required: "Campo requerido"
+				},
+				vencimientoCategoria:{
+					required: "Campo requerido"
+				},
+				email:{
+					required: "Campo requerido",
+					email: "Digite un correo electronico valido"
+					
+				},
+				fechaAlta:{
+					required: "Campo requerido"
+				},
+
+
+				
+				} */// Cierre de los mensajes
+		}); // Cierre de la función validate
+	}); // Cierre de la función ready
+
+</script>
+        <!-- InstanceEndEditable -->
+
+	<div id="espacio3"></div>
+
+    <foot>
+	   <div class="pie">Versión 5.0 | COPYRIGHT   &copy;2014 SIMVA | Contáctenos: 3108549716 | E-mail: contactenos@simva.url.ph</div> 
+    </foot>
+
+	<div id="espacio4"></div>
+
+<!-- InstanceEnd --></html>

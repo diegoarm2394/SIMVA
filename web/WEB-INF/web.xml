@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>GestionFuncionarios</servlet-name>
+        <servlet-class>CONTROLES.GestionFuncionarios</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GestionUsuarios</servlet-name>
+        <servlet-class>CONTROLES.GestionUsuarios</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControlUsuarios</servlet-name>
+        <servlet-class>CONTROLES.ControlUsuarios</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GestionFuncionarios</servlet-name>
+        <url-pattern>/GestionFuncionarios</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GestionUsuarios</servlet-name>
+        <url-pattern>/GestionUsuarios</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControlUsuarios</servlet-name>
+        <url-pattern>/ControlUsuarios</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/spanish/500.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/spanish/404.jsp</location>
+    </error-page>
+</web-app>

@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+
+<meta charset="utf-8">
+	<title>.::Login::SIMVA::.</title>
+
+<link href="css/stilos.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="img/logos/logo.ico" type="image/x-icon">
+<link href="css/animations.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/additional-methods.js"></script>
+</head>
+<body>
+
+	<div class="heading">
+    	Information system
+    </div>
+    
+<div id="wrapper" class="FadeIn">
+    <div class="user-icon"></div>
+    <div class="pass-icon"></div>
+ 
+
+<form id="login-form" name="login-form" class="login-form" action="inicio.html" method="post">
+    
+     <div class="logo">
+      </div>
+    <div class="header">
+
+        <h1>SIMVA</h1>
+        <span>Enter the corresponding data</span>
+    </div>
+  
+    <div class="content">
+    	<input name="usuario" type="text" id="usuario "class="input username" placeholder="Username*" required tabindex="1">
+        <input name="clave" type="password" id="clave"class="input password" placeholder="Password*" required tabindex="2">
+    </div>
+
+    <div id="temp">
+
+                Temporary Access:<br><br>
+                <label class="radio-inline" for="admin">Administrator
+                <input type="radio" name="rol" id="admin" value="admin" required tabindex="3">
+                </label> 
+                <label class="radio-inline" for="asig">Assignment
+                <input type="radio" name="rol" id="asig" value="asig" required>
+                </label><br>
+                <label class="radio-inline" for="mant">Maintaining
+                <input type="radio" name="rol" id="mant" value="mant" required>
+                </label>
+    </div>
+
+    <div class="footer">
+        <input type="submit" name="submit" value="Login" class="button" onclick="redireccion()">
+        <input type="submit" name="submit" value="Register" class="register" onclick="#">
+
+    </div>
+
+</form>
+<a id="olvCon" href="">If you have forgotten your password please contact the system Administrator.</a>
+</div>
+
+    <div class="gradient"></div>
+    	<div class="clr"></div>
+    </div>
+
+<script>
+        $().ready(function() {
+            $(".login-form").validate({ 
+                rules:{
+                    usuario:{
+                        required: true,
+                        minlength: 3,
+                        maxlength: 15,
+                        lettersonly: true
+                    },
+                    clave:{
+                        required: true,
+                        minlength: 6,
+                        maxlength: 16
+                    }
+                },
+                messages:{
+                    usuario:{
+                        required: "        required field",
+                        minlength: "Minim {0} characters",
+                        maxlength: "Maximo {0} characters",
+                        lettersonly: "Enter only letters"
+                    },
+                    clave:{
+                        required: "         required field",
+                        minlength: "Minim {0} characters",
+                        maxlength: "Maximo {0} characters"
+                    }
+                }
+            });
+        });
+
+        $().ready(function() {
+            $(".username").focus(function() {
+                $(".user-icon").css("left","-48px");
+            });
+            $(".username").blur(function() {
+                $(".user-icon").css("left","0px");
+            });
+            
+            $(".password").focus(function() {
+                $(".pass-icon").css("left","-48px");
+            });
+            $(".password").blur(function() {
+                $(".pass-icon").css("left","0px");
+            });
+        });
+
+            function redireccion(){
+                if(document.getElementById("admin").checked){
+                    document.getElementById("login-form").action="administrador.html";
+                }
+                if(document.getElementById("asig").checked){
+                    document.getElementById("login-form").action="asignacion.html";
+                }
+                if(document.getElementById("mant").checked){
+                    document.getElementById("login-form").action="mantenimiento.html";
+                }
+            }
+    </script>
+
+</body>
+</html>
